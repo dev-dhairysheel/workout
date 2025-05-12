@@ -1,6 +1,6 @@
 import streamlit as s
 from google import genai
-from google.api_core import r
+from google.api_core import retry
 import json as j
 import re as _r
 import time as t
