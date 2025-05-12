@@ -1,5 +1,5 @@
 import streamlit as s
-from google import g
+from google import genai
 from google.api_core import r
 import json as j
 import re as _r
