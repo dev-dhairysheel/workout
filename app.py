@@ -147,9 +147,6 @@ def render_generator_page():
                 )
                 output = response.candidates[0].content.parts[0].text
 
-                # Show raw text
-                st.subheader("Raw Output")
-                st.code(output)
 
                 # Clean markdown and extract JSON
                 cleaned = re.sub(r"^```json|```$", "", output.strip(), flags=re.MULTILINE).strip()
