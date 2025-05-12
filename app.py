@@ -7,7 +7,7 @@ import time as t
 import urllib.parse as u
 
 
-c = g.Client(api_key=API_KEY)
+c = g.Client(api_key=st.secrets['API_KEY '])
 
 i = lambda e: (isinstance(e, g.errors.APIError) and e.code in {429, 503})
 if hasattr(g.models.Models.generate_content, '__wrapped__'):
